@@ -48,6 +48,7 @@ class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDe
             let photoLibraryAction = UIAlertAction(title:
                "Photo Library", style: .default, handler: { (_) in
                 imagePicker.sourceType = .photoLibrary
+            self.present(imagePicker, animated: true, completion: nil)
             })
             photoAlertController.addAction(photoLibraryAction)
         }
